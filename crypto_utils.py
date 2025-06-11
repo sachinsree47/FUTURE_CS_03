@@ -2,9 +2,7 @@ from Crypto.Cipher import AES
 from Crypto.Random import get_random_bytes
 from Crypto.Util.Padding import pad, unpad
 
-# Use a secure 32-byte key (For demo; in production, use ENV VARs or secure vaults)
 KEY = b'MyUltraSecretAES256KeyForTesting'
-  # 32 bytes for AES-256
 
 def encrypt_file(data):
     iv = get_random_bytes(16)  # 16 bytes IV for CBC
