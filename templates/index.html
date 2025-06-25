@@ -31,7 +31,7 @@
     <div class="file-list">
         <h3>Encrypted Files Available:</h3>
         <ul class="list-group">
-            {% for file in files %}
+            {% for file in files if file.endswith('.enc') %}
                 <li class="list-group-item d-flex justify-content-between align-items-center">
                     {{ file }}
                     <a href="/download/{{ file }}" class="btn btn-sm btn-success">Download & Decrypt</a>
@@ -45,8 +45,9 @@
 
 <footer class="text-center">
     <p>Cybersecurity Internship Project - AES Secure Storage 🚀</p>
-<p> Made with ❤️ by Sachin Sree</p>
+    <p>Made with ❤️ by Sachin Sree</p>
 </footer>
 
 </body>
 </html>
+
