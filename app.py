@@ -11,7 +11,7 @@ os.makedirs(DECRYPTED_FOLDER, exist_ok=True)
 
 @app.route('/')
 def index():
-    files = os.listdir(UPLOAD_FOLDER)
+    files = [f for f in os.listdir(UPLOAD_FOLDER) if f.endswith('.enc')]
     return render_template('index.html', files=files)
 
 @app.route('/upload', methods=['POST'])
@@ -41,4 +41,5 @@ def download_file(filename):
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000, debug=True)
+
 
