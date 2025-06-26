@@ -19,7 +19,8 @@ Built a secure file upload/download web portal using Flask with AES-256 encrypti
 - crypto_utils.py – AES encryption logic  
 - index.html – Portal UI template  
 - requirements.txt – Python dependencies  
-- SECURITY_OVERVIEW.md – Implementation & key management notes  
+- SECURITY_OVERVIEW.md – Implementation & key management notes 
+- AES_Report.pdf - Full report 
 - Working_screenshots.pdf – Portal demo with UI  
 - README.md – This file
 
